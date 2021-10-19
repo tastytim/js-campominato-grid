@@ -12,7 +12,7 @@ play.addEventListener("click" , function(){
     const optionvalue = option.value;
     // con la function trovo il totale di celle
     const totalSquads = squadgenerator(optionvalue);
-    console.log(totalSquads);
+    console.log("totale di celle = " + totalSquads);
     // genero con la function il campo
     generateSquads(totalSquads);
 });
@@ -38,18 +38,21 @@ function generateSquads(total){
 
     // Calcolo quante celle per riga
     const totalcellsrow = Math.sqrt(total);
-    console.log(totalcellsrow);
+    const percent = 100 / totalcellsrow;
+    console.log("totale di celle per riga = " + totalcellsrow);
+    
     // Inserisco le celle nel campo cambiando le misure(style)
     for(let i = 1; i <= total; i++){
        let squad =  document.createElement("div");
        squad.classList.add("square");
-       squad.style.width = totalcellsrow + "%";
-       squad.style.height = totalcellsrow + "%";
+       squad.style.width = percent + "%";
+       console.log("width = " + percent + "%");
+       squad.style.height = percent + "%";
+       console.log("height = " + percent + "%");
        squad.innerText = i;
-    //    Aggiungo functio che cambia colore quando clicco
+    //    Aggiungo function che cambia colore quando clicco
        squad.addEventListener("click", changecoloronclick);
        camp.append(squad);
-
     }
 
 }
