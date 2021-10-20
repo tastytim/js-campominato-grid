@@ -17,28 +17,26 @@
     <div class="body">
       <header>
         <div class="header">
-            <div class="col"><h1>Campo minato : la Griglia</h1></div>
-            <div class="col"><span class="col-contain"
-            >Difficolta :
+          <div class="col"><h1>Campo minato : la Griglia</h1></div>
+          <div class="col">
+            <span class="col-contain"
+              >Difficolta :
 
-            <select name="difficolta" id="selectoption">
-              <option value="1">Easy</option>
-              <option value="2">Medium</option>
-              <option value="3">Hard</option>
-            </select>
-            <button id="start">Play</button>
-          </span></div>
-         
-         
-          
+              <select name="difficolta" id="selectoption">
+                <option value="1">Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+              </select>
+              <button id="start">Play</button>
+            </span>
+          </div>
         </div>
       </header>
 
       <main>
         <div class="container">
-            <div id="camp">
-                
-            </div>
+          <div class="punteggio" id="points">0</div>
+          <div id="camp"></div>
         </div>
       </main>
 
@@ -50,5 +48,6 @@
 
     <!-- Javascript -->
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="bombe.js"></script>
   </body>
 </html>

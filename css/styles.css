@@ -45,12 +45,25 @@
   flex-wrap: wrap;
 }
 
-.square{
-    border : 1px solid black;
+.square {
+  border: 1px solid black;
 }
 
-.clicked{
-    background-color: #6495ED;
+.clicked {
+  background-color: #6495ed;
 }
 
+.clickedbomb {
+  background-color: red;
+}
 
+.punteggio {
+  margin: 0 auto;
+  width: 50px;
+  background-color: whitesmoke;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
